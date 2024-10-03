@@ -1,0 +1,566 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Lato, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar {
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color  ease 0.3s;
+}
+
+.navbar.scrolled {
+    background-color: white;
+    transform: translateY(0);
+}
+
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navbar-list a:hover {
+    background-color: #414a52;
+}
+
+.navbar-list {
+    display: flex;          
+    justify-content: space-between;  
+    align-items: center;    
+    list-style: none;       
+    padding: 0;
+    margin: 0;
+    width: 100%;            
+}
+
+.navbar-list li {
+    margin: 10px;         
+}
+
+.navbar-list li:last-child {
+    margin-left: auto;
+}
+
+.navbar-list a {
+    text-decoration: none; 
+    color: #000;            
+    font-size: 24px;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #000;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.hero-section {
+    background: url(./Images/parallax1.jpg) no-repeat center center/cover;
+    height: 100vh;
+    opacity: 0.7;
+    background-attachment: fixed;
+}
+
+.hero-section h1 {
+    display: flex;
+    background-color: black;
+    color: #c3d2de;
+    text-align: center;
+    padding: 12px 24px;
+    font-size: 24px;
+    margin-top: 50vb;
+    letter-spacing: 10px;
+}
+
+.about-description2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.about-description2-rightSide p {
+    font-size: 18px;
+    margin-left: 50px;
+    line-height: 35px;
+}
+
+.section-title {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    color: grey;
+}
+
+.section-subtitle {
+    padding-bottom: 30px;
+    color: grey;
+}
+
+.about-description1 p {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.about-description2-leftSide h3 {
+    padding-bottom: 40px;
+    text-align: center;
+    color: #414a52;
+}
+
+.about-description2-leftSide img {
+    width: 100%;
+    transition: opacity linear 0.3s;
+    opacity: 0.7;
+}
+
+.about-description2-leftSide img:hover {
+    opacity: 1;
+}
+
+.my-advantages  {
+    padding: 100px 0;
+    text-align: center;
+    color: grey;
+    font-size: 20px;
+}
+
+.about-skills {
+    width: 100%;
+    padding-bottom: 150px;
+}
+
+.photography h3{
+    font-size: 20px;
+    color: rgb(154, 149, 149);
+    letter-spacing: 12px;
+    padding-bottom: 30px;
+}
+
+.photography p {
+    width: 100%;
+    background-color: rgb(154, 149, 149);
+    text-align: center;
+    padding: 0;
+}
+
+.photography span {
+    display: block;
+    background-color: grey;
+    width: 90%;
+    padding: 20px 0;
+    font-size: 20px;
+    color: white;
+}
+
+.Web-Design h3 {
+    padding-top: 15px;
+    color: rgb(154, 149, 149);
+    font-size: 20px;
+    letter-spacing: 12px;
+    padding-bottom: 30px;
+}
+
+.Web-Design p {
+    width: 100%;
+    background-color: rgb(154, 149, 149);
+    text-align: center;
+    padding: 0;
+}
+
+.Web-Design span{
+    display: block;
+    background-color: gray;
+    width: 85%;
+    padding: 20px 0;
+    font-size: 20px;
+    color: white;
+}
+
+.photoshop h3{
+    padding-top: 15px;
+    color: rgb(154, 149, 149);
+    font-size: 20px;
+    letter-spacing: 12px;
+    padding-bottom: 30px;
+}
+
+.photoshop p{
+    width: 100%;
+    background-color: rgb(154, 149, 149);
+    text-align: center;
+    padding: 0;
+}
+
+.photoshop span {
+    display: block;
+    background-color: grey;
+    width: 75%;
+    padding: 20px 0;
+    color: white;
+    font-size: 20px;
+}
+
+.our-successes {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #616161;
+    padding: 70px 0;
+}
+
+.our-successes p {
+    padding-top: 10px;
+}
+
+.our-successes span, .our-successes p {
+    color: white;
+    font-size: 25px;
+}
+
+.portfolio-title {
+    background: url(./Images/parallax2.jpg) repeat center center/cover;
+    width: 100%;
+    padding-bottom: 300px;
+    opacity: 0.7;
+    background-attachment: fixed;
+}
+
+.portfolio-title h2 {
+    text-align: center;
+    padding-top: 220px;
+    color: white;
+    letter-spacing: 12px;
+    font-size: 35px;
+}
+
+.portfolio-description-title {
+    padding-top: 120px;
+}
+
+.portfolio-description-title h3 {
+    text-align: center;
+    color: #616161;
+    font-size: 30px;
+    letter-spacing: 4px;
+} 
+
+.portfolio-description-subtitle {
+    padding-top: 40px;
+}
+
+.portfolio-description-subtitle h4 {
+    text-align: center;
+    color: #969494;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+
+.portfolio-items {
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.portfolio-item {
+    cursor: pointer;
+    transition: opacity ease 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-item:hover {
+    opacity: 0.7;
+}
+
+
+.portfolio-items img {
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.portfolio-button {
+    padding-top: 130px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-button button {
+    background-color: #b5b4b4;
+    text-align: center;
+    padding: 16px 28px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color ease 0.3s;
+}
+
+.portfolio-button button:hover {
+background-color: #969696;
+}
+
+.contact-top{
+    padding: 300px 0;
+    background: url(./Images/parallax3.jpg) repeat center center/cover;
+    background-attachment: fixed;
+}
+
+.contact-top h2 {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.contact-title {
+    padding-top: 100px;
+}
+
+.contact-title h2 {
+    text-align: center;
+    color: #929090;
+    font-weight: bold;
+}
+
+.contact-subtitle {
+    padding-top: 50px;
+}
+
+.contact-subtitle h3 {
+    text-align: center;
+    color: #b5b4b4;
+}
+
+.contact-description {
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact-img {
+    width: 40%;
+}
+
+.contact-img img {
+    width: 100%;
+}
+
+.contact-information p {
+    color: #787676;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.contact-comment {
+    padding-top: 10px;
+    color: #787676;
+    font-size: 20px;
+}
+
+.contact-feedback{
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+
+.contact-form input, .contact-form textarea {
+    display: block;
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contact-button {
+    padding: 16px 28px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    transition: background-color ease 0.3s;
+    cursor: pointer;
+    border: none;
+}
+
+.contact-button:hover {
+    background-color: #969696;
+}
+
+.footer-part {
+    padding-top: 100px;
+    background-color: #969696;
+    transition: background-color ease 0.3s;
+}
+
+.footer-part:hover {
+    background-color: #000;
+}
+
+.footer-button {
+    padding-bottom: 10px;
+}
+
+.footer-button a {
+    padding: 16px 28px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: white;
+    color: #969696;
+    transition: background-color ease 0.3s;
+}
+
+.footer-button a:hover {
+    background-color: #787676;
+}
+
+.social-logos ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-logos ul li {
+    margin: 0 10px;
+}
+
+.social-logos ul li a {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color ease 0.3s;
+}
+
+.social-logos ul li a:hover {
+    color: #969696;
+}
+
+.footer-author {
+    padding: 50px 0;
+}
+
+.footer-author p {
+    color: white;
+    font-size: 20px;
+}
+
+.footer-author a {
+    text-decoration: underline;
+}
+
+
+
+@media(max-width: 768px) {
+    .menu-icon {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    .navbar-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 20px;
+    }
+
+    .navbar-list.active {
+        display: flex;
+        align-items: start;
+        position: relative;
+        background-color: transparent;
+        background-color: #000;
+    }
+
+    .navbar-list li a {
+        background-color: white;
+        color: rgba(0, 0, 0, 0.7);
+    }
+
+    .navbar-list li:last-child {
+        display: none;
+    }
+
+}
+
+@media(max-width: 600px) {
+    .portfolio-items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .our-successes {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-around;
+    }
+    
+    .our-successes br {
+        display: none;
+    }
+
+    .our-successes p {
+        color: white;
+        font-size: 25px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .our-successes span {
+        font-size: 25px;
+        text-align: center;
+        display: block;
+    }
+
+    .contact-top {
+        background-size: auto;
+    }
+
+    .contact-top h2 {
+        text-align: center;
+    }
+
+    .about-description2 p{
+        display: none;
+    }
+
+    .contact-img img{
+        display: none;
+    }
+
+
+}
+
